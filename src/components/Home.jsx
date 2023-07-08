@@ -18,20 +18,14 @@ const Home = () => {
           <GraphCardSelector
             graphName="Disjoint force-directed"
             url="disjoint"
-            imgSrc="disjointforcedirectedgraph"
-            dlUrl="disjointforcedirected.json"
           />
           <GraphCardSelector
             graphName="Force-directed graph"
             url="forced-graph"
-            imgSrc="forcedirectedgraph"
-            dlUrl="forcedirectedgraph.json"
           />
           <GraphCardSelector
             graphName="Mobile Patent Suits"
             url="mobile-patent-suits"
-            imgSrc="mobilepatentsuits"
-            dlUrl="mobilepatentsuits.csv"
           />
         </div>
       </div>
