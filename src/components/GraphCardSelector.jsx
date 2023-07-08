@@ -1,14 +1,10 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-
+import disjointImg from "../assets/images/Disjoint force-directed graph.jpg";
 const GraphCardSelector = ({ imgSrc, graphName, url, dlUrl }) => {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <img
-        className="w-full"
-        src={`./src/assets/images/${imgSrc}.jpg`}
-        alt={graphName}
-      />
+      <img className="w-full" src={disjointImg} alt={graphName} />
       <div className="px-6 py-4">
         <div>
           <div className="font-bold text-xl mb-1 text-slate-50">
