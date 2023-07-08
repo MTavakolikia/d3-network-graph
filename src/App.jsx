@@ -1,32 +1,23 @@
-import { useState } from "react";
-import Disjoint from "./components/Disjoint";
-import SelectNode from "./components/SelectNode";
-import FileUploader from "./components/FileUploader";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import ForcedGraphPage from "./pages/forcedGraph";
+import DisjointPage from "./pages/disjointPage";
+import MobilePatentSuitsPage from "./pages/mobilePatentSuitsPage";
 
 const App = () => {
-  const [data, setData] = useState(null);
-  const [selectedNode, setSelectedNode] = useState("all");
-  const selectNode = (e) => {
-    setSelectedNode(e);
-  };
-  const jsonData = (e) => {
-    setData(e);
-  };
-  const csvData = (e) => {
-    setData(e);
-  };
-
-  console.log(data);
   return (
-    <div className="flex w-full h-screen items-center justify-center  relative">
-      <FileUploader jsonData={jsonData} csvData={csvData} />
-      {data && (
-        <div className="w-full h-full">
-          <SelectNode SelectedNode={selectNode} nodes={data.nodes} />
-          <Disjoint {...data} selectedNode={selectedNode} />
-        </div>
-      )}
-    </div>
+    <main className="content">
+      {/* <Topbar /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/disjoint" element={<DisjointPage />} />
+        <Route path="/forced-graph" element={<ForcedGraphPage />} />
+        <Route
+          path="/mobile-patent-suits"
+          element={<MobilePatentSuitsPage />}
+        />
+      </Routes>
+    </main>
   );
 };
 
