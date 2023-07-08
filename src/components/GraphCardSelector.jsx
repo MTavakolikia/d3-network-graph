@@ -30,7 +30,7 @@ const GraphCardSelector = ({ graphName, url }) => {
       />
       <div className="px-6 py-4">
         <div>
-          <div className="font-bold text-xl mb-1 text-slate-50">
+          <div className="font-bold text-base mb-2 text-slate-50">
             {graphName}
           </div>
         </div>
