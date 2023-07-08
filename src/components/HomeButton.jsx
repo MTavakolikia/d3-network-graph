@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const HomeButton = () => {
   return (
-    <button className="bg-slate-700  hover:bg-slate-500 -ml-4 text-white font-bold py-2 px-4 mt-4 rounded absolute top-5 left-1/2 ">
+    <button className="bg-slate-700 z-50  hover:bg-slate-500 -ml-4 text-white font-bold py-2 px-4 mt-4 rounded absolute top-5 left-1/2 ">
       <Link to="/" className="flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"

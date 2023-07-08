@@ -6,7 +6,7 @@ const GraphCardSelector = ({ imgSrc, graphName, url, dlUrl }) => {
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
       <img
         className="w-full"
-        src={`../../src/assets/images/${imgSrc}.jpg`}
+        src={`./src/assets/images/${imgSrc}.jpg`}
         alt={graphName}
       />
       <div className="px-6 py-4">
@@ -21,7 +21,7 @@ const GraphCardSelector = ({ imgSrc, graphName, url, dlUrl }) => {
           </button>
           <a
             title="download proper file"
-            href={`../../src/assets/files/${dlUrl}`}
+            href={`./src/assets/files/${dlUrl}`}
             download={graphName}
             className="bg-slate-700 hover:bg-slate-500 text-white font-bold py-2 pl-2 mt-4 rounded inline-flex items-center"
           >
