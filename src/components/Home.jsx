@@ -27,6 +27,10 @@ const Home = () => {
             graphName="Mobile Patent Suits"
             url="mobile-patent-suits"
           />
+          <GraphCardSelector
+            graphName="Force-directed Graph With Canvas"
+            url="forced-graph-canvas"
+          />
         </div>
       </div>
     </div>

@@ -22,6 +22,8 @@ const GraphCardSelector = ({ graphName, url }) => {
             ? forcedImg
             : graphName === "Mobile Patent Suits"
             ? mobilepatentImg
+            : graphName === "Force-directed Graph With Canvas"
+            ? forcedImg
             : ""
         }
         alt={graphName}
@@ -45,6 +47,8 @@ const GraphCardSelector = ({ graphName, url }) => {
                 ? forceDirectedFile
                 : graphName === "Mobile Patent Suits"
                 ? mobilePatentFile
+                : graphName === "Force-directed Graph With Canvas"
+                ? forceDirectedFile
                 : ""
             }
             download={graphName}

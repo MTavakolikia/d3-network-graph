@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Disjoint from "../components/Disjoint";
 import SelectNode from "../components/SelectNode";
 import FileUploader from "../components/FileUploader";
 import HomeButton from "../components/HomeButton";
+import ForcedGraphWithCanvas from "../components/ForceDirectedGraphWithCanvas";
 
-const DisjointPage = () => {
+const ForcedGraphCanvasPage = () => {
   const [data, setData] = useState(null);
   const [selectedNode, setSelectedNode] = useState("all");
   const selectNode = (e) => {
@@ -18,17 +18,17 @@ const DisjointPage = () => {
   };
 
   return (
-    <div className="flex w-full h-screen items-center justify-center  relative ">
+    <div className="flex w-full h-screen items-center justify-center  relative">
       <HomeButton />
       <FileUploader jsonData={jsonData} csvData={csvData} />
       {data && (
         <div className="w-full h-full">
           <SelectNode SelectedNode={selectNode} nodes={data.nodes} />
-          <Disjoint {...data} selectedNode={selectedNode} />
+          <ForcedGraphWithCanvas {...data} selectedNode={selectedNode} />
         </div>
       )}
     </div>
   );
 };
 
-export default DisjointPage;
+export default ForcedGraphCanvasPage;
