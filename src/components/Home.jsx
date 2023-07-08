@@ -2,8 +2,8 @@ import GraphCardSelector from "./GraphCardSelector";
 
 const Home = () => {
   return (
-    <div className="h-screen flex items-center justify-center flex-col  overflow-auto">
-      <div className="text-slate-300 text-center mb-10">
+    <div className=" flex items-center justify-center flex-col py-10 h-full  overflow-auto">
+      <div className="text-slate-300 text-center mb-10 ">
         <h1 className="text-3xl text-slate-800 font-bold bg-slate-400 inline-block px-4 py-1 mb-3 rounded-md">
           Welcome To The Data Visualization App
         </h1>
@@ -14,7 +14,7 @@ const Home = () => {
         <h5 className="text-sm mt-1">Powered By D3.js Library</h5>
       </div>
       <div>
-        <div className="grid grid-cols-3 gap-7">
+        <div className="grid grid-cols-4 gap-7 px-7">
           <GraphCardSelector
             graphName="Disjoint force-directed"
             url="disjoint"

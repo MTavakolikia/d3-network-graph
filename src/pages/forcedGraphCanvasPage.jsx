@@ -18,7 +18,7 @@ const ForcedGraphCanvasPage = () => {
   };
 
   return (
-    <div className="flex w-full h-screen items-center justify-center  relative">
+    <div className="flex w-full h-screen items-center justify-center  relative ">
       <HomeButton />
       <FileUploader jsonData={jsonData} csvData={csvData} />
       {data && (
