@@ -22,7 +22,7 @@ const ForcedGraphPage = () => {
       <HomeButton />
       <FileUploader jsonData={jsonData} csvData={csvData} />
       {data && (
-        <div className="w-full h-full">
+        <div className="w-full">
           <SelectNode SelectedNode={selectNode} nodes={data.nodes} />
           <ForcedGraph {...data} selectedNode={selectedNode} />
         </div>

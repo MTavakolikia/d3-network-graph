@@ -22,7 +22,7 @@ const ForcedGraphCanvasPage = () => {
       <HomeButton />
       <FileUploader jsonData={jsonData} csvData={csvData} />
       {data && (
-        <div className="w-full h-full">
+        <div className="">
           <SelectNode SelectedNode={selectNode} nodes={data.nodes} />
           <ForcedGraphWithCanvas {...data} selectedNode={selectedNode} />
         </div>
